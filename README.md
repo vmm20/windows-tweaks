@@ -2,11 +2,11 @@
 
 I created this repository to hold all sorts of registry (`.reg`) files that can modify the Windows experience.  This is a work in progress.
 
-Many of these registry values can be changed in a more user friendly way using the Group Policy Editor, but users with a Home Edition of Windows who cannot access the Group Policy editor can still change the registry to achieve many of the same configurations.
+Many of these registry values can also be changed using the Group Policy Editor.  Note that not all configurations in the Group Policy Editor are possible to change using the registry (for example, the Security Settings).  Similarly, not all registry keys have corresponding Group Policy options.
 
-Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when you open them.
+The Group Policy Editor is specifically designed by Microsoft to implement these changes safely and efficiently.  In fact, the Group Policy Editor is simply modifying registry keys behind the scenes.  If you have access to the Group Policy Editor, I recommend it over using these tweaks to directly modify the registry.  However, users who cannot access the Group Policy editor (those who have a Home Edition of Windows) can still change the registry to achieve many of the same configurations.
 
-I strongly encourage you to inspect these files before you merge them into your registry, just as a best practice.
+Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when you open them.  I strongly encourage you to inspect these files before you merge them into your registry, just as a best practice.
 
 ## Note about user-specific changes
 Some of these tweaks are machine-wide changes, while others are per-user changes.  I will do my best to indicate which ones are each type in the file names.
@@ -15,7 +15,9 @@ Keep in mind that all the per-user registry keys will be added to the hive `HKEY
 
 If you use a standard, non-administrative account as your everyday account, and you click `Run as Administrator` when you open `regedit` or `cmd` to complete the merge, the `HKEY_CURRENT_USER` hive will actually be the administrator account, not the everyday account you're actually using.  Bear this in mind, as the changes you expect might not show up on your standard account.  (If you try to run the registry merge as the standard user, you will most likely get `Access Denied`, or the merge simply won't work.)
 
-If you want to apply tweaks to a specific non-administrative user account, you will need to find that account's `SID`, a unique identifier created by Windows that remains stable throughout the life of the account, even if the username changes.  The `SID` has this general format:
+If you want to apply tweaks to a specific non-administrative user account, you will need to find that account's `SID`, a unique identifier created by Windows that remains stable throughout the life of the account, even if the username changes.  Note that using registry tweaks in this way is often more flexible than using the Group Policy Editor.
+
+The `SID` has this general format:
 ```
 S-1-5-21-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-YYYY
 ```
