@@ -1,12 +1,14 @@
 # Windows Tweaks
 
+![](https://img.shields.io/badge/license-MIT-blue)
+
 I created this repository to hold all sorts of registry (`.reg`) files that can modify the Windows experience.  This is a work in progress.
 
 Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when you open them.  I strongly encourage you to inspect these files before you merge them into your registry, just as a best practice.
 
 ## Standard Warning
 
-Many of the data in the registry are necessary for Windows to function correctly.  Changing, creating, or deleting registry keys improperly may render your system inoperable.
+Many of the data in the registry are necessary for Windows to function correctly.  Changing, creating, or deleting registry keys or values improperly may render your system inoperable.
 
 Before making any changes to the registry, please back up all of your personal data and store it on a different device such as a removable drive, or with a cloud storage provider.
 
@@ -27,7 +29,7 @@ The Windows registry is a hierarchical database that holds configuration data fo
 - `HKEY_USERS`
 - `HKEY_CURRENT_CONFIG`
 
-In each hive lives a collection of keys and subkeys, along with values.  Each value has a name and corresponding data.  Several types of values are available, including strings (`REG_SZ`), integers (`REG_DWORD` and `REG_QWORD`), and others.
+Each hive contains a collection of keys and subkeys, along with values.  Each value has a name and corresponding data.  Several types of values are available, including strings (`REG_SZ`), integers (`REG_DWORD` and `REG_QWORD`), and others.
 
 It might be helpful to draw some parallels between the registry and the regular Windows filesystem.
 - Hives are similar to drives; each of them contains a root directory and a tree of data.
