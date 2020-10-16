@@ -2,11 +2,21 @@
 
 I created this repository to hold all sorts of registry (`.reg`) files that can modify the Windows experience.  This is a work in progress.
 
+Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when you open them.  I strongly encourage you to inspect these files before you merge them into your registry, just as a best practice.
+
+## Intended Use
+
+**Warning:** If you're operating in an enterprise environment, do not use any files in this repository.  They might put individual machine policies in conflict with the network.
+
+If you are using a personal computer not connected to an enterprise network, the tweaks in this repository are for you.  Make sure you have administrator rights on your computer before you try any of these.
+
+*If you are using macOS or any Linux distro, the files in this repository are useless for you.  These operating systems have different configuration options you can investigate elsewhere.*
+
+## Registry Editor vs. Group Policy Editor
+
 Many of these registry values can also be changed using the Group Policy Editor.  Note that not all configurations in the Group Policy Editor are possible to change using the registry (for example, the Security Settings).  Similarly, not all registry keys have corresponding Group Policy options.
 
 The Group Policy Editor is specifically designed by Microsoft to implement these changes safely and efficiently.  In fact, the Group Policy Editor is simply modifying registry keys behind the scenes.  If you have access to the Group Policy Editor, I recommend it over using these tweaks to directly modify the registry.  However, users who cannot access the Group Policy editor (those who have a Home Edition of Windows) can still change the registry to achieve many of the same configurations.
-
-Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when you open them.  I strongly encourage you to inspect these files before you merge them into your registry, just as a best practice.
 
 ## Note about user-specific changes
 Some of these tweaks are machine-wide changes, while others are per-user changes.  I will do my best to indicate which ones are each type in the file names.
