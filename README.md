@@ -42,7 +42,7 @@ Many of these registry values can also be changed using the Group Policy Editor.
 
 The Group Policy Editor is specifically designed by Microsoft to implement these changes safely and efficiently.  In fact, the Group Policy Editor is simply modifying registry keys behind the scenes.  If you have access to the Group Policy Editor, I recommend it over using these tweaks to directly modify the registry.  However, users who cannot access the Group Policy editor (those who have a Home Edition of Windows) can still change the registry to achieve many of the same configurations.
 
-Be aware that the correspondences between Group Policy objects and registry keys are public knowledge, <a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=101451">published in an Excel spreadsheet on Microsoft's website</a>.
+Be aware that the correspondences between Group Policy objects and registry keys are public knowledge, [published in an Excel spreadsheet on Microsoft's website](https://www.microsoft.com/en-us/download/details.aspx?id=101451).
 
 ## Note about user-specific changes
 Some of these tweaks are machine-wide changes, while others are per-user changes.  I will do my best to indicate which ones are each type in the file names.
