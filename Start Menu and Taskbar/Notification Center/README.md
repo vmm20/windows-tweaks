@@ -2,9 +2,10 @@
 
 This folder contains registry tweaks for modifying the Notification Center, also known as the Action Center, in Windows 10 and Windows Server.
 
-## Enable/Disable Notification Center
+## Toggle Notification Center
+![](https://img.shields.io/badge/Effective-Restart%20explorer.exe-brightgreen)
 
-The following files can completely disable/hide and enable/unhide the notification center for one user or all users.
+These files can completely disable/hide and enable/unhide the notification center for one user or all users.
 
 Note that disabling the notification center will not stop notifications from appearing.  It will only remove the button from the end of the taskbar and prevent notifications from being collected after they are shown.
 
