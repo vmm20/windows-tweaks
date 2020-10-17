@@ -12,10 +12,10 @@ Note that disabling the notification center will not stop notifications from app
 
 This is a negative policy, so in the absence of any registry value, the notification center will be enabled.  You may need to use the "unset" files if you want to apply specific changes to individual users, but you need to eliminate the machine-wide policy first.
 
+> **Restart explorer.exe for these changes to take effect.**
+
 | Action | ![](https://img.shields.io/badge/Scope-Machine-orange) | ![](https://img.shields.io/badge/Scope-User-blue) |
 | :--: | :--: | :--: |
 | Disable | [View](NotificationCenter-machine-disable.reg) | [View](NotificationCenter-user-disable.reg)
 | Enable | [View](NotificationCenter-machine-enable.reg) | [View](NotificationCenter-user-enable.reg)
 | Unset | [View](NotificationCenter-machine-unset.reg) | [View](NotificationCenter-user-unset.reg)
-
-**Restart explorer.exe for these changes to take effect.**
