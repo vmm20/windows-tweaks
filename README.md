@@ -4,7 +4,7 @@
 
 I created this repository to hold all sorts of registry (`.reg`) files that can modify the Windows experience.  This is a work in progress.
 
-Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when you open them.  I strongly encourage you to inspect these files before you merge them into your registry, just as a best practice.
+Because directly editing the registry can be intimidating and often dangerous, I've put together these files to automatically apply changes when they are opened.  I strongly encourage everyone to inspect these files before merging them into the registry, just as a best practice.
 
 ## Standard Warning
 
