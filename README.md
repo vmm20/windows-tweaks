@@ -8,9 +8,7 @@ Because directly editing the registry can be intimidating and often dangerous, I
 
 ## Standard Warning
 
-Many of the data in the registry are necessary for Windows to function correctly.  Changing, creating, or deleting registry keys or values improperly may render your system inoperable.
-
-Before making any changes to the registry, please back up all of your personal data and store it on a different device such as a removable drive, or with a cloud storage provider.
+Many of the data in the registry are necessary for Windows to function correctly.  Changing, creating, or deleting registry keys or values improperly may render your system inoperable.  Before making any changes to the registry, please back up your important files to external storage.
 
 ## Intended Use
 
